@@ -43,7 +43,7 @@ function createNewDrink() {
     drinkNumber.setAttribute('class', 'drink-number');
     drinkAmountEl.setAttribute('class', 'drink-amount focus-outline');
     alcoholLevelEl.setAttribute('class', 'alcohol-level focus-outline');
-    drinkAmountEl.setAttribute('placeholder', 'Объём напитка в мл.');
+    drinkAmountEl.setAttribute('placeholder', 'Объём напитка (мл.)');
     alcoholLevelEl.setAttribute('placeholder', 'Крепость напитка (%)');
 
     newDrink.append(drinkNumber);
