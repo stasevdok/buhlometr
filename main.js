@@ -25,7 +25,7 @@ let maxDose;
 let allowToDrink;
 
 function copyToClipboard() {
-    navigator.clipboard.writeText('https://github.com/stasevdok/');
+    navigator.clipboard.writeText('https://stasevdok.github.io/buhlometr/');
     let oldInnerHtml = buttonLink.innerHTML;
     buttonLink.innerHTML = 'Ссылка скопирована';
     setTimeout(function() {
