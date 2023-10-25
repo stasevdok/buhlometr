@@ -1,0 +1,238 @@
+body {
+    position: absolute;
+    width: 100%;
+	height: 100%;
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.calculator-container {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hide-result {
+    display: none !important;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.10);
+}
+
+.buhlometr {
+    width: 100%;
+    box-shadow: 0px 0px 0px 0.5px #000 inset;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url(i/header-background.svg);
+}
+
+.buhlometr-logo {
+    margin-left: 10px;
+}
+
+.button {
+    display: flex;
+    height: 48px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+    text-align: center;
+    font-family: Fira Code;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.2s ease-out;
+}
+
+.button:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(16, 16, 16, 1);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.button:hover .button-icon {
+    opacity: 0.8;
+    transition: all 0.2s ease-out;
+}
+
+.button-icon {
+    opacity: 1;
+    transition: all 0.2s ease-out;
+}
+
+.button-300 {
+    width: 300px;
+}
+
+.button-full{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.button-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.container {
+    width: 50%;
+    height: 552px;
+    box-shadow: 0px 0px 0px 0.5px #000 inset;
+    overflow: hidden;
+    position: relative;
+}
+
+.first-string {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+}
+
+.new-drink {
+    display: flex;
+    flex-direction: row;
+}
+
+.drink-number {
+    width: 47px;
+    height: 47px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    border-top: 0 solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 0.5px solid #000;
+    border-left: 0.5px solid #000;
+}
+.drink-amount {
+    width: 251px;
+    height: 47px;
+    padding: 0 0 0 13px;
+    border-top: 0 solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 0.5px solid #000;
+    border-left: 0.5px solid #000;
+    font-family: Fira Code;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.alcohol-level {
+    width: 299px;
+    height: 47px;
+    padding: 0 0 0 13px;
+    border-top: 0 solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 0.5px solid #000;
+    border-left: 0.5px solid #000;
+    font-family: Fira Code;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#weight {
+    width: 286px;
+    height: 47px;
+    padding: 0 0 0 13px;
+    border: 0.5px solid #000;
+    font-size: 14px;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#other-drinks {
+    height: 456px;
+    padding-top: 48px;
+    overflow: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+#other-drinks::-webkit-scrollbar {
+    display: none;
+}
+
+.other-drinks-line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+#alcohol-level2 {
+    width: 100%;
+    height: 47px;
+    padding: 0 0 0 13px;
+    border: 0.5px solid #000;
+    font-size: 14px;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.focus-outline:focus { 
+    outline: none; 
+    background-color: #F2F2F2;
+}
+
+
+
+.result {
+    width: 100%;
+    height: 47px;
+    padding: 0 0 0 13px;
+    border: 0.5px solid #000;
+    font-size: 14px;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+	align-items: center;
+    gap: 8px;
+}
+
+.results-line {
+    width: 100%;
+    height: 0.5px;
+    background-color: #000;
+}
+
+.result-title {
+    font-weight: 500 !important;
+    background-color: #F2F2F2;
+}
+
+.important-number {
+    font-weight: 500 !important;
+}
