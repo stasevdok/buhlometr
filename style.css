@@ -230,7 +230,7 @@ body {
 
 .result-title {
     font-weight: 500 !important;
-    background-color: #CECECE;
+    background-color: #CECECE !important;
 }
 
 .important-number {
