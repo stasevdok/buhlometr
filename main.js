@@ -120,6 +120,7 @@ function createNewDrink() {
         totalDrank = 0;
 
         alcoholStatus(); 
+        testRemain();
     });
 };
 
