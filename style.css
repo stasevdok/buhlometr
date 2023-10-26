@@ -109,6 +109,7 @@ input {
     flex-direction: row;
     position: absolute;
     top: 0;
+    background-color: #FFFFFF;
 }
 
 .new-drink {
