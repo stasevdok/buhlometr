@@ -128,7 +128,7 @@ function alcoholStatus() {
     if (allowToDrink > 0) {
         result.textContent = 'Еще можно пить!';
     } else if (allowToDrink <= 0) {
-        result.textContent = 'Вероятно, что ты уже сдох!';
+        result.textContent = 'Вероятно, что вы уже мертвы!';
     } else {
         result.textContent = 'Введите корректные данные!';
     };
