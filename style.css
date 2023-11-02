@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: row;
     align-self: stretch;
-    height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
 
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 #other-drinks {
-    height: calc(100vh - 144px);
+    height: calc(100dvh - 144px);
     margin-top: 48px;
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@ body {
 }
 @media (max-width: 960px) {
     #other-drinks {
-        height: calc(100vh - 192px);
+        height: calc(100dvh - 192px);
         margin-top: 96px;
     }
 }
