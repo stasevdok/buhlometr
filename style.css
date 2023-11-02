@@ -222,6 +222,7 @@ body {
     font-weight: 400;
     line-height: normal;
     border: 0.5px solid #000;
+    border-radius: 0 !important;
 }
 
 #weight {
