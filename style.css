@@ -60,6 +60,11 @@ body {
     top: 0;
     left: 0;
 }
+@media (max-width: 960px) {
+    .left-line {
+        display: none;
+    }
+}
 
 .right-line {
     width: 0.5px;
@@ -68,6 +73,11 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+}
+@media (max-width: 960px) {
+    .right-line {
+        display: none;
+    }
 }
 
 .first-string {
@@ -189,6 +199,7 @@ body {
 
 .button-add {
     width: 50%;
+    height: 49px !important;
 }
 @media (max-width: 960px) {
     .button-add {
@@ -200,10 +211,12 @@ body {
     width: 100%;
     position: absolute;
     bottom: 0;
+    z-index: 1000;
 }
 
 .button-change {
     display: none;
+    z-index: 1000;
 }
 @media (max-width: 960px) {
     .button-change {
@@ -227,6 +240,7 @@ body {
 
 #weight {
     width: 50%;
+    border-bottom: 1px solid #000;
 }
 @media (max-width: 960px) {
     #weight {
@@ -236,7 +250,7 @@ body {
 
 .drink-number {
     width: 47px;
-    height: 47px;
+    height: 48px;
     display: flex;
 	align-items: center;
 	justify-content: center;
