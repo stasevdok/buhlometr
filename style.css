@@ -1,7 +1,7 @@
 body {
     position: absolute;
     width: 100%;
-    height: 100dvh;
+    height: 10dvh;
     margin: 0;
     font-family: 'Fira Code', monospace;
     display: flex;
@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: row;
     align-self: stretch;
-    height: calc(100dvh - 48px);
+    height: calc(100vh - 48px);
 
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 #other-drinks {
-    height: calc(100dvh - 144px);
+    height: calc(100vh - 144px);
     margin-top: 48px;
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@ body {
 }
 @media (max-width: 960px) {
     #other-drinks {
-        height: calc(100dvh - 192px);
+        height: calc(100vh - 192px);
         margin-top: 96px;
     }
 }
@@ -111,10 +111,22 @@ body {
 .new-drink {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 @media (max-width: 500px) {
     .new-drink {
         flex-wrap: wrap;
+    }
+}
+
+.number-and-drink {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+@media (max-width: 500px) {
+    .number-and-drink {
+        width: 100%;
     }
 }
 
@@ -126,7 +138,7 @@ body {
 
 .result {
     width: 100%;
-    padding: 14.25px;
+    padding: 14.5px;
     border: 0.5px solid #000;
     font-size: 14px;
     font-family: Fira Code;
@@ -257,16 +269,11 @@ body {
 }
 
 .drink-amount {
-    width: calc(50% - 48px);
-}
-@media (max-width: 500px) {
-    .drink-amount {
-        width: calc(100% - 78px);
-    }
+    width: calc(100% - 48px);
 }
 
 .alcohol-level  {
-    width: 50%;
+    width: calc(50% - 29px);
 }
 @media (max-width: 500px) {
     .alcohol-level {
